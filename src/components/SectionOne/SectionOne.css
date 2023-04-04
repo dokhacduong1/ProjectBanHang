@@ -1,0 +1,44 @@
+
+.sectionOne__content{
+    margin-top: 30px;
+    background-color: #F5F5F5;
+    padding: 20px 30px;
+    text-align: center;
+}
+.sectionOne__content a{
+    text-decoration: none;
+}
+.sectionOne__content--text{
+    color: rgb(60, 60, 67);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    transition: opacity 0.3s ease 0s, color 0.3s ease 0s, background-color 0.3s ease 0s;
+}
+.sectionOne__content--text:hover{
+    color: black;
+}
+.sectionOne__image{
+    margin-top: 30px;
+    background-image: url(../SectionOne/asset/img/1.jpg);
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    word-wrap: break-word;
+    width: 100%;
+}
+.sectionOne__image h1{
+   font-size: 40px;
+   text-align: center;
+   font-weight: 800;
+   color: #323232;
+  
+  
+}
+.sectionOne__image h1 a{
+   
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}

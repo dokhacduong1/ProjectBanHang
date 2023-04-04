@@ -1,0 +1,110 @@
+.sectionThree{
+    margin-top: 85px;
+}
+
+
+.sectionThree__tab{
+    margin-top: 40px;
+}
+.sectionThree__tab ul{
+    list-style: none;
+}
+.sectionThree__tab--list{
+    align-items: center;
+    border-bottom: 1px solid #d8d8d9;
+    display: flex;
+    overflow-x: auto;
+    padding: 0;
+}
+.sectionThree__indexTab{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    width: 26%;
+}
+.sectionThree__indexTab:hover{
+    background-color: #ececec;
+}
+.sectionThree__indexTab--btn{
+    background-color: initial;
+    border: 0;
+    border-radius: 0;
+    color: #3c3c43;
+    cursor: pointer;
+    display: inline-block;
+    font: inherit;
+    font-family: Hiragino Kaku Gothic ProN,ヒラギノ角ゴ Pro W3,Meiryo,メイリオ,游ゴシック Medium,Yu Gothic Medium,游ゴシック体,Yu Gothic,YuGothic,MS PGothic,Osaka,arial,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+    outline: 0;
+    padding: 14px 0 12px;
+    text-transform: none;
+    transition: color .3s ease;
+    width: 100%;
+    font-size: 23px;
+}
+.sectionThree__indexTab--btn:focus{
+    outline: none;
+   
+}
+.sectionThree__indexTab--btn--active{
+     border-bottom: 2px solid #000;
+}
+.sectionThree__tab__bodyOk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sectionThree__tab__body{
+    transition: all 0.3s ease 0s;
+}
+.slick-arrow{
+    background-color: initial;
+    border: 0;
+    font-size: 25px;
+}
+.slick-arrow:hover{
+    color: #949494;
+}
+.slick-arrow:focus{
+    outline: 0;
+}
+.sectionThree__bodyOk{
+    display: flex;
+}
+.sectionThree__bodyOk li{
+    cursor: pointer;
+}
+.sectionThree__bodyOK-index{
+    
+    
+}
+.sectionThree__bodyOK-img{
+    padding-right: 25px;
+}
+.sectionThree__bodyOK-img img{
+    width: 80%;
+}
+.sectionThree__bodyOK-text{
+    display: block;
+    margin-bottom: 15px;
+    position: relative;
+}
+.sectionThree__bodyOK-text{
+    color: #3c3c43;
+    display: block;
+    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: -0.25em;
+    margin-top: -0.25em;
+    transition: color .3s ease;
+}
+.sectionThree__bodyOk li a{
+    text-decoration: none;
+}

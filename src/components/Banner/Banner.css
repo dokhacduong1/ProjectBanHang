@@ -1,0 +1,31 @@
+
+.wrapAroundBanner .wrapAroundBanner__block{
+    border-bottom: 1px solid #dedede;
+    text-align: center;
+}
+
+.wrapAroundBanner .wrapAroundBanner__link{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 48px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.6;
+    padding: 0.5em 0.8em;
+    align-items: center;
+}
+.wrapAroundBanner .wrapAroundBanner__link--color{
+    color : #7f0019
+}
+.wrapAroundBanner .wrapAroundBanner__block span{
+    align-items: center;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: #6d6d72;
+}
+.wrapAroundBanner .wrapAroundBanner__block small,b{
+    font-size: 19px;
+    font-weight: 500;
+}

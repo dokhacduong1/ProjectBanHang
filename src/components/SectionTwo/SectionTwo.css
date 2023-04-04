@@ -1,0 +1,73 @@
+.sectionTwo{
+    margin-top: 40px;
+}
+.sectionTwoProduct{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.sectionTwoProduct .sectionTwoProduct__item{
+   padding-right: 19px ;
+   text-align: center;
+   padding-left: 0;
+    list-style-type: none !important;
+    vertical-align: top;
+    cursor: pointer;
+}
+.sectionTwoProduct__item a{
+    text-decoration: none;
+}
+.sectionTwoProduct__itemTmb{
+    display: block;
+   
+}
+.sectionTwoProduct__itemTmb--image{
+    position: relative;
+    display: block;
+    transition: opacity 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+.sectionTwoProduct__itemTmb--image img{
+    width: 100%;
+    height: 306px;
+    vertical-align: bottom;
+    border-radius: 10%;
+}
+.sectionTwoProduct__itemTmb--description{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sectionTwoProduct__itemTmb--txt{
+   
+    font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, "游ゴシック Medium", "Yu Gothic Medium", 游ゴシック体, "Yu Gothic", YuGothic, "MS PGothic", Osaka, arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #3C3C43;
+    line-height: 1.5;
+    margin-top: -0.25em;
+    margin-bottom: 0;
+    transition: color 0.3s ease;
+    display: block;
+}
+
+.sectionTwo__Btn{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.fa-star.checked {
+    animation: blink 1s ease-in-out infinite;
+    font-size: 27px;
+    color: #ffd700;
+    position: relative;
+    display: inline-block;
+}
+
+
+@keyframes blink {
+    50% {
+        opacity: 0.3;
+    }
+}
