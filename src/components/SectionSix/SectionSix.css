@@ -1,0 +1,31 @@
+.SectionSix{
+    margin-top: 10px;
+    background-color: rgb(224, 226, 226);
+    padding-top: 10px;
+}
+.SectionSix__boxIcon--list ul{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.SectionSix__boxUl{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.SectionSix__boxUl li{
+    margin: 0 10px;
+    font-size: 35px;
+    
+}
+.SectionSix__boxUl li i{
+    color: rgb(43, 43, 43);
+}
+.SectionSix__endContent{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 11px;
+}
