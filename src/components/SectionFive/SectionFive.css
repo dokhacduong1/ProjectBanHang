@@ -1,0 +1,61 @@
+.sectionFive{
+    display: block;
+    max-width: 1384px;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sectionFive__box{
+    border: 1px solid #d8d8d9;
+    border-radius: 4px;
+}
+.sectionFive__box a{
+    text-decoration: none;
+}
+.sectionFive__boxText{
+    position: relative;
+    display: block;
+    padding: 50px 30px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+.sectionFive__content--boxtext{
+    text-align: center;
+}
+.sectionFive__content--boxtext h3{
+    margin-top: -0.25em;
+    margin-bottom: -0.25em;
+    color: #232323;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.sectionFive__content--image{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 0;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+   
+}
+.sectionFive__boxImage{
+    width: calc(100% / 4 - (82px / 4));
+}
+.sectionFive__boxImage img{
+    width: 86%;
+}
+.sectionFive__boxImage p{
+    font-size: 21px;
+    font-weight: 600;
+    color: #3C3C43;
+    line-height: 1.5;
+    margin-top: -0.25em;
+    color: #3c3c43;
+    text-align: center;
+}
+
+body .sectionFive__editAima{
+    animation-delay: 0.60s;
+}
