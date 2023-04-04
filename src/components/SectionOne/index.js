@@ -1,12 +1,29 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+// eslint-disable-next-line
 import './SectionOne.css'
 
 function SectionOne(){
 
-    const scrollOk = document.querySelector(".HeaderNew");
     const scrollHeader = ()=>{
         const currentScrollPos = window.pageYOffset;
-        // currentScrollPos === 0 ? scrollOk.classList.remove("HeaderNewOne"):
-        // scrollOk.classList.add("HeaderNewOne");
+        if(currentScrollPos !== 0){    
+            if(document.querySelector(".HeaderNew") !== null){
+              
+                document.querySelector(".HeaderNew").classList.add("HeaderNewOne");
+                document.querySelector(".wrapAroundBanner__block").classList.add("wrapAroundBanner__blockNewOne");
+               
+            }
+       }
+       else if(currentScrollPos === 0){
+            if(document.querySelector(".HeaderNewOne") !== null){
+                document.querySelector(".HeaderNew").classList.remove("HeaderNewOne");
+                document.querySelector(".wrapAroundBanner__block").classList.remove("wrapAroundBanner__blockNewOne");
+               
+            }
+       }
+                
+        
+      
      }
      window.onscroll = () => {
         scrollHeader();
@@ -16,7 +33,7 @@ function SectionOne(){
             <section className="sectionOne">
                 <div className = "container">
                     <div className="sectionOne__content col-12">
-                        <a className="sectionOne__content--text"><strong>Chú Ý</strong>: Cửa Hàng Chỉ Mở Cửa Từ (6h-17h30)</a>
+                        <a href='#/' className="sectionOne__content--text"><strong>Chú Ý</strong>: Cửa Hàng Chỉ Mở Cửa Từ (6h-17h30)</a>
                     </div>
                     <div className='sectionOne__image'>
                        <h1>

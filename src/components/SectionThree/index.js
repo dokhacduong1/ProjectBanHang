@@ -1,4 +1,6 @@
-import React, { useEffect,useCallback,useState, useRef } from 'react';
+/* eslint-disable jsx-a11y/anchor-is-valid */
+// eslint-disable-next-line
+import { useEffect,useState } from 'react';
 import "./SectionThree.css"
 import RequestSlick from './requestSlick';
 
@@ -9,7 +11,6 @@ function SectionThree(){
         fetch("https://josn-server-ban-hang.vercel.app/products")
         .then(data =>data.json())
         .then((getData)=>{
-           console.log("fletc")
            setData(getData);
            setIndex(0);
         })

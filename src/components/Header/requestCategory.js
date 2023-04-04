@@ -1,4 +1,6 @@
-import React, { useEffect ,useState,memo, useCallback } from "react";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+// eslint-disable-next-line
+import { memo} from "react";
 
 function RequestAPI(props){
     function convertToSlug(text) {

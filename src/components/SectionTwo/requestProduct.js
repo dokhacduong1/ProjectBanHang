@@ -1,5 +1,6 @@
-import image1 from './asset/img/1.jpg'
-import React, { useEffect } from "react";
+
+/* eslint-disable jsx-a11y/anchor-is-valid */
+// eslint-disable-next-line
 
 function RequestProduct(props){
     
@@ -12,7 +13,7 @@ function RequestProduct(props){
                     <span>
                         <a href='#' className="sectionTwoProduct__itemTmb">
                             <span className='sectionTwoProduct__itemTmb--image'>
-                                <img src={product.thumbnail}></img>
+                                <img alt="" src={product.thumbnail}></img>
                             </span>
                             <div className='sectionTwoProduct__itemTmb--description'>
                                 <span className='sectionTwoProduct__itemTmb--txt'>

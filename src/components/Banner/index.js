@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+// eslint-disable-next-line
 import "./Banner.css"
 import React, { useEffect } from "react";
 import WOW from 'wowjs'
@@ -15,7 +17,7 @@ function Banner(){
         <>
             <div className = "wrapAroundBanner">
                 <div className ="wrapAroundBanner__block">
-                    <a className="wrapAroundBanner__link " href ="">
+                    <a  className="wrapAroundBanner__link " href ="/">
                         <span>
                             <small className="wrapAroundBanner__link--color">Hello</small>
                         </span>

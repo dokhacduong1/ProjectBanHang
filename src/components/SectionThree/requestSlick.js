@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+// eslint-disable-next-line
 import Slider from "react-slick";
 
 function RequestSlick(props){
@@ -13,9 +15,9 @@ function RequestSlick(props){
       };
       var checkCategory = "";
       if(props.index === 0){
-        checkCategory = "T-Shirt";
-      }else if(props.index === 1){
         checkCategory = "Box";
+      }else if(props.index === 1){
+        checkCategory = "Sandals";
       }
       const newArray = [...props.data.filter(getDataa => getDataa.category === checkCategory)];
     return(
@@ -24,9 +26,9 @@ function RequestSlick(props){
                 {
                     newArray.map((getdata,index)=>(
                         <li>
-                        <a key={index} className="sectionThree__bodyOK-index">
+                        <a href="#/" key={index} className="sectionThree__bodyOK-index">
                             <span className="sectionThree__bodyOK-img">
-                                <img src ={getdata.thumbnail}></img>
+                                <img alt="" src ={getdata.thumbnail}></img>
                             </span>
                             <span className="sectionThree__bodyOK-text">
                                 <p>{getdata.descriptionTitle}</p>

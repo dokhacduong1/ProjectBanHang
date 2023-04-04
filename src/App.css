@@ -9,9 +9,12 @@
     position: fixed;
     width: 100%;
     z-index: 120;
-    transform: translateY(-60%);
+    transform: translateY(-56%);
     transition: transform 0.6s ease 0s;
     background-color: white;
+}
+body .wrapAroundBanner .wrapAroundBanner__blockNewOne{
+  border-bottom: none;
 }
 
 body .btnAll {

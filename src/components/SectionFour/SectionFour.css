@@ -1,0 +1,61 @@
+.sectionFour{
+    margin-top: 40px;
+}
+.sectionFour__boxImage{
+    margin-top: 30px;
+}
+.sectionFour__boxImage ul{
+    list-style: none;
+    padding: 0 18px;
+}
+.sectionFour__boxImage--list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.sectionFour__listItem{
+    width: calc((99.9999% / 4) - 90px / 4);
+    margin-right: 12px;
+    border: 1px solid #e0dddd;
+    border-radius: 4px;
+    margin-left: 0;
+    flex: 1 0 16.666667%;
+    max-width: 26.666667%;
+    animation-delay: 0.2s;
+}
+.sectionFour__listItem--boxText{
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    color: rgb(60, 60, 67);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 3px 3px 0px 0px;
+}
+.sectionFour__listItem--image{
+    height: auto;
+    flex-basis: 100px;
+}
+.sectionFour__listItem--image img{
+    width: 100%;
+    height: auto;
+    border-radius: 0 3px 0 0;
+}
+.sectionFour__listItem--text{
+    margin: 0 5% 0 15px;
+    flex-grow: 1;
+    flex-basis: 155px;
+    font-size: 15px;
+    line-height: 2;
+}
+.sectionFour__listItem--description{
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}

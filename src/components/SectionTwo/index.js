@@ -2,7 +2,7 @@ import "./SectionTwo.css"
 import RequestProduct from './requestProduct'
 import './SectionTwo.css'
 import WOW from "wowjs"
-import React, { useState,useCallback, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 function SectionTwo(){
     const styles = {
         visibility : "visible",
@@ -15,7 +15,6 @@ function SectionTwo(){
       }, []);
     const [data, setData] = useState([]);
     const LoadProcduct =  useEffect(()=>{
-        console.log(2)
         fetch("https://josn-server-ban-hang.vercel.app/products")
         .then(data =>data.json())
         .then((getData)=>{
@@ -33,7 +32,7 @@ function SectionTwo(){
                     <RequestProduct data ={data}/>
                 </ul>
                 <div className="sectionTwo__Btn wow bounceInDown "dataWowDelay="0.1s" style={styles}>
-                    <a class="sectionTwo__Btn--btn btnAll">More</a>
+                    <a href=" " class="sectionTwo__Btn--btn btnAll">More</a>
                 </div>
             </div>
            

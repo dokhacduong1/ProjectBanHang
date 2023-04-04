@@ -1,4 +1,5 @@
-import imagePath from './asset/img/logo.png'
+/* eslint-disable jsx-a11y/anchor-is-valid */
+// eslint-disable-next-line
 import icon1 from './asset/img/1.svg'
 import icon2 from './asset/img/2.svg'
 import icon3 from './asset/img/3.svg'
@@ -31,9 +32,6 @@ function Header(){
         <nav className="co-header" onLoad={clickCategory2}>
             <div className="container co-header__box">
                 <div className="co-header_logo col-2 row">
-                    {/* <a className="co-header_logoLink col-12" href="">
-                        <img src = {imagePath}/>
-                    </a> */}
                     <span class="co-header_logoText col-7  wow swing">GNOUD</span>
                 </div>
                 <div className='co-headerDropMenu col-3'  onClick={clickCategory}>
@@ -49,10 +47,10 @@ function Header(){
                         <div className='lIcon'>
                             <div className='co-header__toolBtn'>
                                 <span className='co-header__toolTmb'>
-                                    <img src = {icon1}></img>
+                                    <img src = {icon1} alt =""/>
                                 </span>
                                 <span className='co-header__toolTxt'>
-                                    <a>Đăng Nhập</a>
+                                    <a >Đăng Nhập</a>
                                 </span>
                             </div>
                         </div>
@@ -61,7 +59,7 @@ function Header(){
                         <div className='lIcon'>
                             <div className='co-header__toolBtn'>
                                 <span className='co-header__toolTmb'>
-                                    <img src={icon2}></img>
+                                    <img src={icon2} alt=""></img>
                                 </span>
                                 <span className='co-header__toolTxt'>
                                     <a>Yêu Thích</a>
@@ -73,7 +71,7 @@ function Header(){
                         <div className='lIcon'>
                             <div className='co-header__toolBtn'>
                                 <span className='co-header__toolTmb'>
-                                    <img src={icon3}></img>
+                                    <img src={icon3} alt=""></img>
                                 </span>
                                 <span className='co-header__toolTxt'>
                                     <a>Giỏ Hàng</a>
@@ -85,7 +83,7 @@ function Header(){
                         <div className='lIcon'>
                             <div className='co-header__toolBtn'>
                                 <span className='co-header__toolTmb'>
-                                    <img src={icon4}></img>
+                                    <img src={icon4} alt=""></img>
                                 </span>
                                 <span className='co-header__toolTxt'>
                                     <a>Ủng Hộ</a>
