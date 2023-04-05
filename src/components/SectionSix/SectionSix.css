@@ -29,3 +29,12 @@
     font-weight: 500;
     margin-top: 11px;
 }
+
+@media (max-width: 368.9px) {
+    .SectionSix__boxUl li { 
+        font-size: 24px;
+    }
+    .SectionSix__endContent {
+        font-size: 11px;
+    }
+}

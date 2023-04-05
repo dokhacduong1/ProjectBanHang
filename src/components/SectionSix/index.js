@@ -9,8 +9,6 @@ function SectionSix(){
                         <ul class="social SectionSix__boxUl">
                             <li><a href=" "><i class="fa-brands fa-facebook"></i></a></li>
                             <li><a href=" "><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href=" "><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href=" "><i class="fa-solid fa-rss"></i></a></li>
                             <li><a href=" "><i class="fa-brands fa-dribbble"></i></a></li>
                         </ul>
                     </div>

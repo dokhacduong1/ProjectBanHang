@@ -11,7 +11,18 @@ function RequestSlick(props){
         slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow: <button type="button" className="slick-prev"><i class="fa-solid fa-angle-left"></i></button>,
-        nextArrow: <button type="button" className="slick-next"><i class="fa-solid fa-angle-right"></i></button>
+        nextArrow: <button type="button" className="slick-next"><i class="fa-solid fa-angle-right"></i></button>,
+        responsive: [
+            {
+              breakpoint: 368.9,
+              settings: {
+                slidesToShow: 1,
+                centerPadding:'70px',
+                centerMode:true,
+                arrows:false
+              }
+            }
+          ]
       };
       var checkCategory = "";
       if(props.index === 0){

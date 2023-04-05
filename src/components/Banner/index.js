@@ -15,18 +15,21 @@ function Banner(){
     return (
         
         <>
-            <div className = "wrapAroundBanner">
-                <div className ="wrapAroundBanner__block">
-                    <a  className="wrapAroundBanner__link " href ="/">
-                        <span>
-                            <small className="wrapAroundBanner__link--color">Hello</small>
-                        </span>
-                        <span className="wow lightSpeedIn center" style={styles}>
-                            <small>Welcome To The World Duong</small>
-                        </span>
-                    </a>
+            <section className = "wrapAroundBanner">
+                <div className="container">
+                    <div className ="wrapAroundBanner__block">
+                        <a  className="wrapAroundBanner__link " href ="/">
+                            <span>
+                                <small className="wrapAroundBanner__link--color">Hello </small>
+                            </span>
+                            <span className="wow lightSpeedIn center" style={styles}>
+                                <small>Welcome To The World Duong</small>
+                            </span>
+                        </a>
+                    </div>
                 </div>
-            </div>
+                
+            </section>
         </>
     )
 }

@@ -58,3 +58,11 @@ body .btnAll:hover{
     background-color: #F5F5F5;
     text-decoration: none;
 }
+
+@media (max-width: 368.9px) {
+    body .btnAll {
+        max-width: 110px;
+        width: 63%;
+    
+    }
+}

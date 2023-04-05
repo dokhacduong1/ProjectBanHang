@@ -78,9 +78,25 @@ body .sectionFive__editAima{
     .sectionFive__boxImage{
         width: 100%;
     }
-    .sectionFive__boxImage p {
-        display: none;
-       
-    }
     
+}
+@media (max-width: 388.9px) {
+    .sectionFive__content--boxtext h3 {
+        font-size: 24px;
+    }
+    .sectionFive__content--image {
+      flex-wrap: wrap;
+    }
+    .sectionFive__boxImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionFive__boxImage img {
+        width: 30%;
+    }
+    .sectionFive__boxImage p {
+        margin-bottom: 0;
+        margin-left: 17px;
+    }
 }

@@ -2,7 +2,7 @@ import "./SectionFive.css"
 import image1 from "./asset/img/1.png"
 import image2 from "./asset/img/2.png"
 import image3 from "./asset/img/3.png"
-import image4 from "./asset/img/4.png"
+
 function SectionFive(){
     return(
         <>
@@ -28,10 +28,7 @@ function SectionFive(){
                                         <img alt="" src={image3}></img>
                                         <p>Stable Warehouse</p>
                                     </span>
-                                    <span className="sectionFive__boxImage wow bounceInUp sectionFive__editAima ">
-                                        <img alt="" src={image4}></img>
-                                        <p>Many Offers</p>
-                                    </span>
+                                 
                                 </span>
                             </span>
 

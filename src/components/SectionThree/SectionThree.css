@@ -131,3 +131,27 @@
         text-align: center;
     }
 }
+
+
+@media (max-width: 368.9px) {
+    .sectionThree {
+        margin-top: 40px;
+    }
+    .sectionThree__boxText h3 {
+        font-size: 1.3rem;
+    }
+    .sectionThree__tab {
+       margin: 0;
+    }
+    .sectionThree__indexTab--btn {
+        font-size: 14px;
+    }
+    body .slick-slide {
+        width: 117px;
+    }
+}
+
+@media (max-width: 320.9px) {
+   
+  
+}

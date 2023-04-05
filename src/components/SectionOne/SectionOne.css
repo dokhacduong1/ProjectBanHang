@@ -47,3 +47,31 @@
         font-size: 30px;
     }
 }
+
+@media (max-width: 368.9px) {
+    .sectionOne__image {  
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+    .sectionOne__image h1 {
+        font-size: 19px;
+    }
+    .sectionOne__content--description h4, .sectionOne__content--description span {
+        text-align: center;
+        font-size: 15px;
+    }
+    .sectionOne__content--description{
+        text-align: center;
+    }
+}
+@media (max-width: 320.9px) {
+    .sectionOne__content--description h4, .sectionOne__content--description span {
+        text-align: center;
+        font-size: 13px;
+    }
+    .sectionTwo__Btn {
+        margin-top: -3px;
+ 
+    }
+  
+}

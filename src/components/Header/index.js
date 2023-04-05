@@ -84,6 +84,9 @@ function Header() {
               <div className="co-header__tool">
                 <div className="lIcon">
                   <div className="co-header__toolBtn">
+                  <span className="co-header__Count">
+                      <p>0</p>
+                    </span>
                     <span className="co-header__toolTmb">
                       <img src={icon3} alt=""></img>
                     </span>

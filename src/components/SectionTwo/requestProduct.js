@@ -9,7 +9,7 @@ function RequestProduct(props){
         <>
         {
             props.data.slice(0, 6).map((product) => (
-                <li className="sectionTwoProduct__item col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                <li className="sectionTwoProduct__item col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
                     <span>
                         <a href='#' className="sectionTwoProduct__itemTmb">
                             <span className='sectionTwoProduct__itemTmb--image'>
