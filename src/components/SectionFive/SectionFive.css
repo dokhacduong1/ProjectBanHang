@@ -59,3 +59,28 @@
 body .sectionFive__editAima{
     animation-delay: 0.60s;
 }
+
+
+@media (max-width: 1199.9px) {
+  
+}
+@media (max-width: 991.9px) {
+    
+}
+@media (max-width: 767.9px) {
+    .sectionFive__boxImage p {
+        font-size: 9px;
+        font-weight: 800;
+        color: #000000;
+    }
+}
+@media (max-width: 575.9px) {
+    .sectionFive__boxImage{
+        width: 100%;
+    }
+    .sectionFive__boxImage p {
+        display: none;
+       
+    }
+    
+}

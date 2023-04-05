@@ -59,3 +59,31 @@
     text-align: center;
     margin-top: 20px;
 }
+
+
+
+
+@media (max-width: 1199.9px) {
+  
+}
+@media (max-width: 991.9px) {
+    .sectionFour__listItem {
+        flex: 0 0 44.666667%;
+        max-width: 50.666667%;
+        margin-bottom: 12px;
+    }
+    .sectionFour__boxImage--list {
+        justify-content: center;
+    }
+}
+@media (max-width: 767.9px) {
+ 
+}
+@media (max-width: 575.9px) {
+   
+    .sectionFour__listItem {
+        flex: 4 7 48.666667%;
+        max-width: 100%;
+        margin-bottom: 12px;
+    }
+}

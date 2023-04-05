@@ -17,7 +17,7 @@ function SectionSix(){
                 </div>
                 <div class="row">
                     <div class="col-lg-12 text-center ">
-                        <p class="SectionSix__endContent">Thank You For Visiting Our Website.<br/> We Hope You Have Found Useful And Interesting Information.</p>
+                        <p class="SectionSix__endContent">Thank You For Visiting Our Website.<br/>We Hope You Have A Great Shopping Time</p>
                     </div>
                 </div>
                 </div>

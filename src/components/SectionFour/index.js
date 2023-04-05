@@ -17,9 +17,9 @@ function SectionFour(){
                         <h3 ><strong>Featured Description</strong></h3>
                     </div>
                     <div className="sectionFour__boxImage">
-                        <ul className="sectionFour__boxImage--list">
+                        <ul className="sectionFour__boxImage--list col-12">
 
-                            <li className="sectionFour__listItem  wow bounceInUp center" styles ={style}>
+                            <li className="sectionFour__listItem  wow bounceInUp center " styles ={style}>
                                 <span className="sectionFour__listItem--boxText">
                                     <span className="sectionFour__listItem--text">
                                         <h7>MEN CLOTHES</h7>
@@ -35,7 +35,7 @@ function SectionFour(){
                                 </ul>
                             </li>
 
-                            <li className="sectionFour__listItem  wow bounceInUp center"  styles ={style}>
+                            <li className="sectionFour__listItem  wow bounceInUp center "  styles ={style}>
                                 <span className="sectionFour__listItem--boxText">
                                     <span className="sectionFour__listItem--text">
                                         <h7>WOMEN CLOTHING</h7>
@@ -51,7 +51,7 @@ function SectionFour(){
                                 </ul>
                             </li>
 
-                            <li className="sectionFour__listItem  wow bounceInUp center"  styles ={style}>
+                            <li className="sectionFour__listItem  wow bounceInUp center "  styles ={style}>
                                 <span className="sectionFour__listItem--boxText">
                                     <span className="sectionFour__listItem--text">
                                         <h7>CHILDREN'S WEAR</h7>

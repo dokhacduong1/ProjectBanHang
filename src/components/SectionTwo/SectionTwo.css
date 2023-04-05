@@ -71,3 +71,19 @@
         opacity: 0.3;
     }
 }
+@media (max-width: 991.9px) {
+    .sectionTwoProduct__itemTmb--image img{
+        height: 231px;
+    }
+}
+@media (max-width: 767.9px) {
+    .sectionTwoProduct__itemTmb--image img{
+        height: auto;
+    }
+}
+@media (max-width: 575.9px) {
+    .sectionTwoProduct__itemTmb--image img{
+        height: auto;
+        width: 300px;
+    }
+}

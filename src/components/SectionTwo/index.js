@@ -25,13 +25,13 @@ function SectionTwo(){
         <>
         <section className="sectionTwo" onLoad={LoadProcduct} >
             <div className="container">
-                <div className="sectionTwo__boxText">
+                <div className="sectionTwo__boxText col-12">
                     <h3 ><strong>Special Products</strong> <span class="fa fa-star checked"></span></h3>
                 </div>
-                <ul className="sectionTwoProduct">
+                <ul className="sectionTwoProduct col-12">
                     <RequestProduct data ={data}/>
                 </ul>
-                <div className="sectionTwo__Btn wow bounceInDown "dataWowDelay="0.1s" style={styles}>
+                <div className="sectionTwo__Btn wow bounceInDown col-12"dataWowDelay="0.1s" style={styles}>
                     <a href=" " class="sectionTwo__Btn--btn btnAll">More</a>
                 </div>
             </div>

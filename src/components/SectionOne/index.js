@@ -33,7 +33,7 @@ function SectionOne(){
             <section className="sectionOne">
                 <div className = "container">
                     <div className="sectionOne__content col-12">
-                        <a href='#/' className="sectionOne__content--text"><strong>Chú Ý</strong>: Cửa Hàng Chỉ Mở Cửa Từ (6h-17h30)</a>
+                        <a href='#/' className="sectionOne__content--text col-12"><strong>Chú Ý</strong>: Cửa Hàng Chỉ Mở Cửa Từ (6h-17h30)</a>
                     </div>
                     <div className='sectionOne__image'>
                        <h1>

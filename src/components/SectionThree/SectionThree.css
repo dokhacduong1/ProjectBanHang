@@ -21,7 +21,7 @@
     justify-content: center;
     position: relative;
     transition: all 0.3s ease 0s;
-    width: 26%;
+    width: 100%;
 }
 .sectionThree__indexTab:hover{
     background-color: #ececec;
@@ -107,4 +107,23 @@
 }
 .sectionThree__bodyOk li a{
     text-decoration: none;
+}
+
+@media (max-width: 991.9px) {
+    .sectionThree__indexTab--btn {
+        font-size: 20px;
+    }
+    .sectionThree__bodyOK-text{
+        font-size: 10px;
+    }
+}
+@media (max-width: 767.9px) {
+    .sectionThree__bodyOK-text{
+       display: none;
+    }
+}
+@media (max-width: 575.9px) {
+    .sectionThree__indexTab--btn {
+        font-size: 18px;
+    }
 }

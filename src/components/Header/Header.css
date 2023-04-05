@@ -1,14 +1,21 @@
 .co-header{
     height: 75px;
-    
-    padding-left: 100px;
-    padding-right: 100px;
+
     border-bottom: 1px solid #dedede;
     transition: all 0.3s ease 0s;
 }
-.co-header .co-header_logo {
+.co-heade__conatair{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    background-color: white;
    
-    
+ 
+}
+.co-header_logo{
+    animation-duration: 5s;
+    display: flex;
 }
 .co-header .co-header_logoLink img{
     height: auto;
@@ -28,7 +35,7 @@
     transform: rotate(-13deg);
     transition: all 0.3s ease 0s;
     color: #1b1b1b;
-    animation-duration: 5s;
+    
 
  
 }
@@ -45,7 +52,7 @@
 }
 .co-header .co-headerDropMenu__list__item .tabButton:focus{
     outline: 0;
-    border-bottom: 1px solid #000000;
+
 }
 .co-headerSerach .searchInputLayout{
    width: 100%;
@@ -79,6 +86,12 @@
     text-align: center;
     margin: 0 10px;
 }
+.co-header .co-header__toolEnd{
+    margin-right: 0;
+}
+.co-header__toolHidenBar{
+    display: none;
+}
 .co-header .co-header__tool .lIcon{
     cursor: pointer;
     height: 100%;
@@ -96,9 +109,10 @@
     margin: 0 auto 5px;
 }
 .co-header__toolTmb img{
-    height: 24px;
-    width: 24px;
+    height: 39px;
+    width: 39px;
 }
+
 .co-header__toolTxt{
     font-size: 11px;
     color: #707070;
@@ -106,7 +120,7 @@
 .category{
   background-color: #f8f8f8;
     border-radius: 10px;
-   margin: 3px 90px;
+   margin: 0px 90px;
    border-bottom: 1px solid #dedede;
    position: relative;
    z-index: 999;
@@ -134,4 +148,80 @@
 }
 body .fa-caret-up{
     transform: rotate(180deg);
+}
+.co-header__toolHidenBar{
+    cursor: pointer;
+}
+.co-header__tool:hover {
+    background-color: #dddddd;
+    border-radius:10px ;
+}
+
+
+@media (max-width: 992.9px) {
+    .co-heade__conatair{
+        flex-wrap: wrap;
+    }
+    .co-header_logo{
+        width: 100%;
+    }
+    .co-header .co-header__tools {
+        position: absolute;
+        left: calc(100%/1.75);
+        margin-bottom: 33px;
+    }
+    .co-header .co-headerSerach{
+        flex: 1;
+        z-index: 9999;
+    }
+    .co-header__toolTmb img {
+        height: 34px;
+        width: 29px;
+    }
+    .co-header .co-header__tool {
+        margin: 0 5px;
+    }
+    .co-header_logo{
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 767.9px) {
+    .co-header .co-header_logoText{
+        font-size: 41px;
+    }
+    .co-header .co-header__tools {
+        position: absolute;
+        left: calc(100%/2.15);
+        margin-bottom: 75px;
+    }
+    .co-header .co-headerDropMenu__list__item .tabButton{
+        display: none;
+    }
+}
+
+@media (max-width: 521.9px) {
+    .co-header .co-header_logoText{
+        font-size: 34px;
+    }
+    .co-header__toolTmb img {
+        height: 30px;
+        width: 28px;
+    }
+    .co-header .co-header__tools {
+        position: absolute;
+        left: calc(100%/2.45);
+        margin-bottom: 49px;
+    }
+ 
+    .co-header__toolTxt {
+       display: none;
+    }
+    .co-header .co-header__tool{
+        min-width: 43px;
+    }
+    .category ul{
+        font-size: 10px;
+    }
 }
