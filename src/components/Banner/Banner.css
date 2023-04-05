@@ -29,3 +29,9 @@
     font-size: 19px;
     font-weight: 500;
 }
+
+@media (max-width: 521.9px) {
+    .wrapAroundBanner .wrapAroundBanner__block small, b {
+        font-size: 17px;
+    }
+}

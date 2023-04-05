@@ -86,4 +86,14 @@
         height: auto;
         width: 300px;
     }
+    .sectionTwo__boxText h3{
+        font-size: 1.6rem;
+    }
+    .sectionTwo__boxText{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .sectionOne__content--description h4 , .sectionOne__content--description span{
+        text-align: center;
+    }
 }

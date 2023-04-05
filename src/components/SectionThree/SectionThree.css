@@ -126,4 +126,8 @@
     .sectionThree__indexTab--btn {
         font-size: 18px;
     }
+    .sectionThree__boxText h3{
+        font-size: 1.6rem;
+        text-align: center;
+    }
 }
