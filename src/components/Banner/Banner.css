@@ -44,20 +44,8 @@
   
 }
 
-@media (max-width: 365.9px) {
-   
-    .wrapAroundBanner .wrapAroundBanner__link{
-        font-size: 0px;
-        display: flex;
-    }
-    .wrapAroundBanner .wrapAroundBanner__block small, b {
-        font-size: 15px;
-    }
-    .wrapAroundBanner .wrapAroundBanner__block span {
-        margin-right: 10px;
-    }
-}
-@media (max-width: 320.9px) {
+
+@media (max-width: 375.9px) {
    
     .wrapAroundBanner .wrapAroundBanner__block small, b {
         font-size: 14px;
