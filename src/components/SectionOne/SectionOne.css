@@ -48,7 +48,18 @@
     }
 }
 
-@media (max-width: 368.9px) {
+@media (max-width: 521.9px) {
+    .sectionOne__image h1 {
+        font-size: 22px;
+    }
+    .sectionOne__image {
+    
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+}
+
+@media (max-width: 390.9px) {
     .sectionOne__image {  
         padding-top: 3rem;
         padding-bottom: 4rem;

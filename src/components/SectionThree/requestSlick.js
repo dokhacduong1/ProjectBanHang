@@ -14,10 +14,10 @@ function RequestSlick(props){
         nextArrow: <button type="button" className="slick-next"><i class="fa-solid fa-angle-right"></i></button>,
         responsive: [
             {
-              breakpoint: 368.9,
+              breakpoint: 390.9,
               settings: {
                 slidesToShow: 1,
-                centerPadding:'70px',
+                centerPadding:'80px',
                 centerMode:true,
                 arrows:false
               }
