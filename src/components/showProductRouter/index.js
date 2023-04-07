@@ -15,19 +15,10 @@ import { convertToSlug } from "../../scriptAll/convertTextLowUp";
    
 
       const settings = {
-        arrows:false,
-        infinite: true,
-
-        responsive: [
-          {
-            breakpoint: 400.9,
-            settings: {
-              slidesToShow: 2,
-             
-              
-            }
-          }
-        ]
+        
+        prevArrow: <button type="button" currentslide="true" ><i className="fa-solid fa-angle-left"></i></button>,
+        nextArrow: <button type="button" slidecount ="true"><i className="fa-solid fa-angle-right"></i></button>,
+    
       };
     useEffect(() => {
       async function fetchData() {
