@@ -1,17 +1,18 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 // eslint-disable-next-line
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 function RequestSlick(props){
    
-  
+ 
     const settings = {
         infinite: true,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
-        prevArrow: <button type="button" className="slick-prev"><i class="fa-solid fa-angle-left"></i></button>,
-        nextArrow: <button type="button" className="slick-next"><i class="fa-solid fa-angle-right"></i></button>,
+        prevArrow: <button type="button" currentslide="true" ><i className="fa-solid fa-angle-left"></i></button>,
+        nextArrow: <button type="button" slidecount ="true"><i className="fa-solid fa-angle-right"></i></button>,
         responsive: [
             {
               breakpoint: 412.9,
@@ -35,17 +36,17 @@ function RequestSlick(props){
         <>
             <Slider className="sectionThree__bodyOk" {...settings}>
                 {
-                    newArray.map((getdata,index)=>(
-                        <li>
-                        <a href="#/" key={index} className="sectionThree__bodyOK-index">
-                            <span className="sectionThree__bodyOK-img">
-                                <img alt="" src ={getdata.thumbnail}></img>
-                            </span>
-                            <span className="sectionThree__bodyOK-text">
-                                <p>{getdata.descriptionTitle}</p>
-                            </span>
-                            </a>
-                    </li>
+                    newArray.slice(0,6).map((getdata,index)=>(
+                        <li key={index} >
+                          <Link  to={`listProduct/${getdata.id}`} key={index} className="sectionThree__bodyOK-index">
+                              <span className="sectionThree__bodyOK-img">
+                                  <img alt="" src ={getdata.thumbnail}></img>
+                              </span>
+                              <span className="sectionThree__bodyOK-text">
+                                  <p>{getdata.descriptionTitle}</p>
+                              </span>
+                            </Link>
+                        </li>
                     ))
                
                 }

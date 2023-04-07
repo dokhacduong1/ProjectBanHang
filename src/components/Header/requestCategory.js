@@ -1,11 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 // eslint-disable-next-line
 import { memo} from "react";
+import { convertToSlug } from "../../scriptAll/convertTextLowUp";
 
 function RequestAPI(props){
-    function convertToSlug(text) {
-        return text.toUpperCase().replace(/ /g, '-');
-    }
     return(
         <div className='category'>
             <ul>

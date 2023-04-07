@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 // eslint-disable-next-line
+import { Link } from "react-router-dom";
 import icon1 from "./asset/img/1.svg";
 import icon2 from "./asset/img/2.svg";
 import icon3 from "./asset/img/3.svg";
@@ -8,6 +9,7 @@ import bar from "./asset/img/bars-solid.svg";
 import "./Header.css";
 import RequestAPI from "./requestCategory";
 import React, { useState, useCallback } from "react";
+import { RequestApiCategory } from "../../scriptAll/requestAPI";
 function Header() {
   const [isCategory, setIsCategory] = useState(false);
   const [data, setData] = useState([]);
@@ -21,33 +23,30 @@ function Header() {
       : getIcon.classList.add("fa-caret-up");
   };
 
-  const clickCategory2 = useCallback(() => {
-    fetch("https://josn-server-ban-hang.vercel.app/category")
-      .then((data) => data.json())
-      .then((getData) => {
+  const clickCategory2 = useCallback(async () => {
+        const  getData = await RequestApiCategory()
         setData(getData);
-      });
   }, []);
 
   return (
     <>
       <nav className="co-header" onLoad={clickCategory2}>
-      <div className="co-header__toolHidenBar">
-              <img src={bar} alt=""></img>
-            </div>
+        <div className="co-header__toolHidenBar">
+          <img src={bar} alt=""></img>
+        </div>
         <div className="container co-header__box">
           <div className="co-heade__conatair">
             <div className="co-header_logo wow swing">
-              <span class="co-header_logoText col-2 col-xl-5 col-md-2 col-lg-4">
+              <Link to="/" className="co-header_logoText col-2 col-xl-5 col-md-2 col-lg-4">
                 GNOUD
-              </span>
+              </Link>
             </div>
             <div className="co-headerDropMenu " onClick={clickCategory}>
               <ul className="co-headerDropMenu__list__item">
                 <button className="tabButton" type="button">
-                  Danh Sách Sản Phẩm 
+                  Danh Sách Sản Phẩm
                 </button>
-                <i class="fa-solid fa-caret-down"></i>
+                <i className="fa-solid fa-caret-down"></i>
               </ul>
             </div>
             <div className="co-headerSerach ">
@@ -84,7 +83,7 @@ function Header() {
               <div className="co-header__tool">
                 <div className="lIcon">
                   <div className="co-header__toolBtn">
-                  <span className="co-header__Count">
+                    <span className="co-header__Count">
                       <p>0</p>
                     </span>
                     <span className="co-header__toolTmb">
@@ -109,7 +108,6 @@ function Header() {
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
         {isCategory && <RequestAPI data={data} />}

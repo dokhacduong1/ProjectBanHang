@@ -17,6 +17,9 @@
     animation-duration: 5s;
     display: flex;
 }
+.co-header_logo a{
+    text-decoration: none;
+}
 .co-header .co-header_logoLink img{
     height: auto;
     width: 75px;

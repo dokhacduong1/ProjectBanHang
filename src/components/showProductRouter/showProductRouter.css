@@ -1,0 +1,360 @@
+.sectionProductRouter {
+    max-width: 1840px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 50px;
+}
+.sectionProductRouter__boxText p strong{
+    font-size: 30px;
+    color: #000;
+}
+
+.sectionProductRouter__box {
+    margin-top: 15px;
+    align-items: start;
+}
+
+.sectionProductRouter__flex {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.sectionProductRouter__flex--image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.sectionProductRouter__imageMain {
+    outline: none;
+    width: 480px;
+}
+
+.sectionProductRouter__flex--image img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+.sectionProductRouter__imageList {
+    display: flex;
+    margin-right: -18px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.sectionProductRouter__imageList--item {
+    width: calc((100% - 48px) / 3);
+    margin-right: 16px;
+    margin-bottom: 15px;
+    padding: 0px;
+    cursor: pointer;
+    border-color: rgba(88, 88, 88, 0.5);
+    border-style: solid;
+    position: relative;
+    border-width: 0px;
+}
+
+.sectionProductRouter__imageList--item img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+.sectionProductRouter__flex--text {
+    margin-left: 67px;
+}
+
+.sectionProductRouter__boxText {
+    margin-top: 100px;
+}
+
+.sectionProductRouter__boxText h1 {
+    font-size: 37px;
+    color: rgb(0, 0, 0);
+    margin-bottom: calc(30px - 0.25em);
+    font-weight: 500;
+}
+
+.sectionProductRouter__boxText p {
+    font-size: 18px;
+    margin: 0;
+    color: rgb(73 73 74);
+
+    font-weight: 450;
+
+}
+
+.sectionProductRouter__boxBtn--btn {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.sectionProductRouter__boxBtn--btn button {}
+
+.sectionProductRouter__boxBtn--btn button:focus {
+    outline: 0;
+}
+
+.sectionProductRouter__boxBtn--text {
+    border-bottom: 1px solid #ddd9d9;
+    padding-bottom: 32px;
+}
+
+.sectionProductRouter__boxBtn--text span {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.sectionProductRouter__boxBtnA {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(60, 60, 67);
+    width: 50%;
+    height: 47px;
+    box-sizing: border-box;
+    margin-right: 0px;
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+
+    position: relative;
+    text-decoration: none
+}
+
+.sectionProductRouter__boxBtnA {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    ;
+    border: 0;
+    background-color: initial;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.sectionProductRouter__boxBtnActive {
+    border-bottom: 2px solid #7c7c7c;
+}
+
+.ectionProductRouter__boxBtn ul {
+    list-style: none;
+}
+
+.sectionProductRouter__boxBtn--btn li {
+    width: 100%;
+}
+
+.sectionProductRouter__spanA {
+    display: none;
+}
+
+.sectionProductRouter__spanB {
+    display: none;
+}
+
+body .sectionProductRouter__activeSpan {
+    display: block;
+}
+
+.sectionProductRouter__boxBtn--count {
+    margin-top: 20px;
+}
+
+.sectionProductRouter__count--icon {
+    display: flex;
+
+    align-items: center;
+}
+
+.sectionProductRouter__count,
+.sectionProductRouter__count--input {
+    margin-right: 20px;
+    font-size: 33px;
+    cursor: pointer;
+}
+
+.sectionProductRouter__count {
+    border: 1px solid #878787;
+
+    padding: 0 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+
+    display: none;
+}
+
+.ant-input-number-input {
+    text-align: center;
+}
+
+.sectionProductRouter__count--btn {
+    width: 100%;
+}
+
+.sectionProductRouter__cout__btn {
+    width: 100%;
+    padding: 13px;
+    margin-top: 20px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    border-radius: 4%;
+    font-weight: 600;
+}
+
+.sectionProductRouter__cout__btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.sectionProductRouter__cout__btn:focus {
+    background-color: white;
+    color: black;
+}
+
+
+@media (max-width: 991.9px) {
+    .sectionProductRouter__imageMain {
+        outline: none;
+        width: 380px;
+    }
+
+    .sectionProductRouter__boxText h1 {
+        font-size: 26px;
+
+    }
+
+    .sectionProductRouter__boxText p {
+        font-size: 16px;
+
+    }
+
+    .sectionProductRouter__boxBtnA {
+        font-size: 15px;
+    }
+
+    .sectionProductRouter__boxBtn--text span {
+        font-size: 15px;
+    }
+
+    .sectionProductRouter__count--text h3 {
+        font-size: 23px;
+    }
+
+    .sectionProductRouter__count,
+    .sectionProductRouter__count--input {
+
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 767.9px) {
+    .sectionProductRouter__imageMain {
+        width: 295px;
+    }
+
+    .sectionProductRouter__boxText p {
+        font-size: 12px;
+    }
+
+    .sectionProductRouter__boxBtnA {
+        font-size: 12px;
+    }
+
+    .sectionProductRouter__boxBtn--text span {
+        font-size: 12px;
+    }
+
+    .sectionProductRouter__count--text h3 {
+        font-size: 20px;
+    }
+
+    .sectionProductRouter__count {
+        border: 1px solid #878787;
+        padding: 0 10px;
+    }
+
+    .sectionProductRouter__boxText {
+        margin-top: 0;
+    }
+
+    .sectionProductRouter__imageList {
+        display: none;
+
+    }
+
+    .sectionProductRouter__flex {
+        display: block;
+    }
+
+    .sectionProductRouter__flex--text {
+        margin-left: 0;
+        margin-top: 25px;
+
+    }
+    .sectionProductRouter {
+        max-width: 1840px;
+        padding-left: 0; 
+        padding-right: 0; 
+        margin-top: 50px;
+    }
+    .sectionProductRouter__boxText p strong {
+        font-size: 20px;
+        color: #000;
+    }
+}
+
+@media (max-width: 575.9px) {}
+
+@media (max-width: 489.9px) {
+    .sectionProductRouter__boxText h1 {
+        font-size: 21px;
+    }
+    .sectionProductRouter__count, .sectionProductRouter__count--input {
+        font-size: 18px;
+    }
+    .sectionProductRouter__count--text h3 {
+        font-size: 18px;
+    }
+    .sectionProductRouter__boxBtn--count {
+        margin-top: 15px;
+    }
+    .sectionProductRouter__cout__btn {
+        width: 100%;
+        padding: 9px;
+        font-size: 15px;
+    }
+    .sectionProductRouter__boxBtnA {
+       margin-bottom: 0;
+    }
+    .sectionProductRouter__boxText h1 {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 400.9px) {
+    .sectionProductRouter__boxText h1 {
+        font-size: 17px;
+    }
+    .sectionProductRouter__boxText p strong{
+        font-size: 17px;
+    }
+    .sectionProductRouter__boxBtnA {
+        font-size: 10px;
+    }
+    .sectionProductRouter__boxBtn--text span {
+        font-size: 10px;
+    }
+
+}
+@media (max-width: 368.9px) {
+
+
+}

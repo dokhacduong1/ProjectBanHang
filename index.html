@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const jsonOk = {
+            "title": "Dép Đi Ở Nhà1",
+            "numberOfProducts": 98,
+            "descriptionTitle": "Dép Đi Trong Phòng",
+            "description": "Tôi Đã Khâu Một Sợi Dây Bện. Cảm Thấy Như Đi Trên Thảm.",
+            "price": 549,
+            "discountPercentage": 12.96,
+            "rating": 4.69,
+            "stock": 94,
+            "brand": "Shoes Duong",
+            "category": "Sandals",
+            "thumbnail": "https://www.muji.com/public/media/img/item/4550512895732_400.jpg",
+            "images": [
+                "https://www.muji.com/public/media/img/item/4550512895732_400.jpg",
+                "https://www.muji.com/public/media/img/item/4550512895732_01_400.jpg",
+                "https://www.muji.com/public/media/img/item/4550512895732_02_400.jpg",
+                "https://www.muji.com/public/media/img/item/4550512895732_03_400.jpg",
+                "https://www.muji.com/public/media/img/item/4550512895732_04_400.jpg"
+            ]
+        }
+        const convetJson = JSON.stringify(jsonOk)
+        console.log(convetJson)
+        let options = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: convetJson
+        }
+      
+
+        fetch('https://josn-server-ban-hang.vercel.app/products',options)
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+            })
+            .catch((error) => {
+                console.log('Ok Success');
+            });
+    </script>
+</body>
+
+</html>

@@ -2,6 +2,7 @@
 // eslint-disable-next-line
 import "./Banner.css"
 import React, { useEffect } from "react";
+
 import WOW from 'wowjs'
 function Banner(){
     useEffect(() => {

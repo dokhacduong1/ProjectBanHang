@@ -1,19 +1,20 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-// eslint-disable-next-line
+/* eslint-disable react-hooks/exhaustive-deps */
+
 import { useEffect,useState } from 'react';
 import "./SectionThree.css"
 import RequestSlick from './requestSlick';
+import { RequestApiProdcut } from '../../scriptAll/requestAPI';
 
 function SectionThree(){
     const [data, setData] = useState([]);
     const [index, setIndex] = useState(-1);
     const clickProduct =  useEffect(()=>{
-        fetch("https://josn-server-ban-hang.vercel.app/products")
-        .then(data =>data.json())
-        .then((getData)=>{
-           setData(getData);
-           setIndex(0);
-        })
+        async function fetchData() {    
+            const getData = await RequestApiProdcut();
+            setData(getData);
+            setIndex(0);
+        }
+          fetchData();      
     },[]);
     const checkActive = document.querySelector(".sectionThree__indexTab--btn--active");
     const clickIndexLi = (e)=>{

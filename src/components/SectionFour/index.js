@@ -22,7 +22,7 @@ function SectionFour(){
                             <li className="sectionFour__listItem  wow bounceInUp center " styles ={style}>
                                 <span className="sectionFour__listItem--boxText">
                                     <span className="sectionFour__listItem--text">
-                                        <h7>MEN CLOTHES</h7>
+                                        <h6>MEN CLOTHES</h6>
                                     </span>
                                     <span className="sectionFour__listItem--image">
                                         <img alt ="" src ={image1}></img>
@@ -38,7 +38,7 @@ function SectionFour(){
                             <li className="sectionFour__listItem  wow bounceInUp center "  styles ={style}>
                                 <span className="sectionFour__listItem--boxText">
                                     <span className="sectionFour__listItem--text">
-                                        <h7>WOMEN CLOTHING</h7>
+                                        <h6>WOMEN CLOTHING</h6>
                                     </span>
                                     <span className="sectionFour__listItem--image">
                                         <img alt ="" src ={image2}></img>
@@ -54,7 +54,7 @@ function SectionFour(){
                             <li className="sectionFour__listItem  wow bounceInUp center "  styles ={style}>
                                 <span className="sectionFour__listItem--boxText">
                                     <span className="sectionFour__listItem--text">
-                                        <h7>CHILDREN'S WEAR</h7>
+                                        <h6>CHILDREN'S WEAR</h6>
                                     </span>
                                     <span className="sectionFour__listItem--image">
                                         <img alt ="" src ={image3}></img>
@@ -70,7 +70,7 @@ function SectionFour(){
                             <li className="sectionFour__listItem  wow bounceInUp center"  styles ={style}>
                                 <span className="sectionFour__listItem--boxText">
                                     <span className="sectionFour__listItem--text">
-                                        <h7>PYJAMA</h7>
+                                        <h6>PYJAMA</h6>
                                     </span>
                                     <span className="sectionFour__listItem--image">
                                         <img alt ="" src ={image4}></img>
