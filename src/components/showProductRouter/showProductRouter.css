@@ -353,7 +353,14 @@ input[type=number]::-webkit-outer-spin-button {
     .sectionProductRouter__boxBtn--text span {
         font-size: 10px;
     }
-
+    .sectionProductRouter__cout__btn {
+    
+        margin-top: 12px;
+    }
+    .sectionProductRouter {
+       
+        margin-top: 36px;
+    }
 }
 @media (max-width: 368.9px) {
 

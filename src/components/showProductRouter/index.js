@@ -16,9 +16,17 @@ import { convertToSlug } from "../../scriptAll/convertTextLowUp";
 
       const settings = {
         
-        prevArrow: <button type="button" currentslide="true" ><i className="fa-solid fa-angle-left"></i></button>,
-        nextArrow: <button type="button" slidecount ="true"><i className="fa-solid fa-angle-right"></i></button>,
-    
+        arrows: false,
+        responsive: [
+            {         
+              breakpoint: 412.9,
+                settings: {
+                    arrows: true,
+                    prevArrow: <button type="button" currentslide="true" ><i className="fa-solid fa-angle-left"></i></button>,
+                    nextArrow: <button type="button" slidecount ="true"><i className="fa-solid fa-angle-right"></i></button>,
+                }
+            }
+          ]
       };
     useEffect(() => {
       async function fetchData() {
@@ -30,9 +38,7 @@ import { convertToSlug } from "../../scriptAll/convertTextLowUp";
     let invoiceItem = undefined
     if(dataAllProduct != null){
        invoiceItem= dataAllProduct.find(data => data.id.toString() === invoiceId.toString())
-       console.log(invoiceItem)
     }
-    const [index, setIndex] = useState(-1);
     const handClickAdd = ()=>{
         setCout(cout+1);
     }
@@ -110,7 +116,7 @@ import { convertToSlug } from "../../scriptAll/convertTextLowUp";
                                         </ul>
                                         <div className="sectionProductRouter__boxBtn--text">
                                             <span className="sectionProductRouter__spanA sectionProductRouter__activeSpan">{invoiceItem.description}</span>
-                                            <span className="sectionProductRouter__spanB ">{invoiceItem.description} 5 <i class="fa-solid fa-star"></i></span>
+                                            <span className="sectionProductRouter__spanB ">{invoiceItem.description} 5 <i className="fa-solid fa-star"></i></span>
                                         </div>
 
                                         <div className="sectionProductRouter__boxBtn--count">
@@ -119,13 +125,13 @@ import { convertToSlug } from "../../scriptAll/convertTextLowUp";
                                             </div>
                                             <div className="sectionProductRouter__count--icon">
                                                 <div className="sectionProductRouter__count" onClick={handClickSub}>
-                                                    <i class="fa-solid fa-minus"></i>
+                                                    <i className="fa-solid fa-minus"></i>
                                                 </div>
                                                 <div className="sectionProductRouter__count--input">
-                                                        <input type="number" class="ant-input-number-input" autocomplete="off" max="50" min="1" step="1" value={cout}/>
+                                                        <input type="number" className="ant-input-number-input" autocomplete="off" max="50" min="1" step="1" value={cout}/>
                                                 </div>
                                                 <div className="sectionProductRouter__count"  onClick={handClickAdd}>     
-                                                    <i class="fa-solid fa-plus"></i>
+                                                    <i className="fa-solid fa-plus"></i>
                                                 </div>
                                             </div>
                                             <div className="sectionProductRouter__count--btn">
