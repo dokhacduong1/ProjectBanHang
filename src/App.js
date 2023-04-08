@@ -2,6 +2,7 @@ import "./App.css";
 import Banner from "./components/Banner";
 import Header from "./components/Header";
 import {Outlet } from "react-router-dom";
+import SectionSix from "./components/SectionSix";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Header />
       </div>
       <Outlet/>
+      <SectionSix />
     </>
   );
 }

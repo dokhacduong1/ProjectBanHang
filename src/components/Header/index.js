@@ -8,12 +8,14 @@ import icon4 from "./asset/img/4.svg";
 import bar from "./asset/img/bars-solid.svg";
 import "./Header.css";
 import RequestAPI from "./requestCategory";
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import { RequestApiCategory } from "../../scriptAll/requestAPI";
+
+
 function Header() {
+ 
   const [isCategory, setIsCategory] = useState(false);
   const [data, setData] = useState([]);
-
   const getIcon = document.querySelector(".fa-caret-down");
 
   const clickCategory = () => {
@@ -80,21 +82,21 @@ function Header() {
                   </div>
                 </div>
               </div>
-              <div className="co-header__tool">
+              <Link to ={'yourcart'} style={{textDecoration:"none"}} className="co-header__tool">
                 <div className="lIcon">
                   <div className="co-header__toolBtn">
                     <span className="co-header__Count">
-                      <p>0</p>
+                      <p style={{color:"#171212"}}>0</p>
                     </span>
                     <span className="co-header__toolTmb">
                       <img src={icon3} alt=""></img>
                     </span>
                     <span className="co-header__toolTxt">
-                      <a>Giỏ Hàng</a>
+                      <a >Giỏ Hàng</a>
                     </span>
                   </div>
                 </div>
-              </div>
+              </Link>
               <div className="co-header__tool co-header__toolEnd">
                 <div className="lIcon">
                   <div className="co-header__toolBtn">

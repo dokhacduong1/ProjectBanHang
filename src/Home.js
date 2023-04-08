@@ -14,7 +14,7 @@ function Home() {
       <SectionThree />
       <SectionFour />
       <SectionFive />
-      <SectionSix />
+     
      
     </>
   );

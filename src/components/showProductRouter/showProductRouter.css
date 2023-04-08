@@ -311,6 +311,9 @@ input[type=number]::-webkit-outer-spin-button {
         color: #000;
     }
 }
+.sectionProductRouter__count--btn .co-header__toCart{
+    display: none;
+}
 
 @media (max-width: 575.9px) {}
 

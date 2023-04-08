@@ -4,6 +4,7 @@ import "./showProductRouter.css"
 import Slider from "react-slick";
 
 import { convertToSlug } from "../../scriptAll/convertTextLowUp";
+import { getAddCartNew} from "./getItemAddCard";
  function ShowProductRouter(props) {
     const [cout,setCout] = useState(1);
 
@@ -14,8 +15,7 @@ import { convertToSlug } from "../../scriptAll/convertTextLowUp";
     const [dataAllProduct, setDataAllProduct] = useState(null);
    
 
-      const settings = {
-        
+      const settings = { 
         arrows: false,
         responsive: [
             {         
@@ -28,6 +28,7 @@ import { convertToSlug } from "../../scriptAll/convertTextLowUp";
             }
           ]
       };
+
     useEffect(() => {
       async function fetchData() {
         const getData = await loadProductData();
@@ -35,18 +36,22 @@ import { convertToSlug } from "../../scriptAll/convertTextLowUp";
       }
       fetchData();
     }, [loadProductData]);
+
     let invoiceItem = undefined
     if(dataAllProduct != null){
        invoiceItem= dataAllProduct.find(data => data.id.toString() === invoiceId.toString())
     }
+
     const handClickAdd = ()=>{
         setCout(cout+1);
     }
+
     const handClickSub = ()=>{
         if(cout>1){
             setCout(cout-1);
         }
     }
+
     const handleClick = (e)=>{
         const checkActive = document.querySelector(".sectionProductRouter__boxBtnActive");
         const checkActiveSpan = document.querySelector(".sectionProductRouter__activeSpan")
@@ -66,6 +71,18 @@ import { convertToSlug } from "../../scriptAll/convertTextLowUp";
             default:
                 break;
         }
+    }
+
+    const pushAddCart =(getData)=>{
+        let coutCart = document.querySelector(".co-header__Count p");
+        if(getAddCartNew.findIndex(obj => obj.id === getData.id) === -1){
+            console.log("ok")
+            const newData = { ...getData, cout: cout , price: getData.price*cout ,priceOriginal : getData.price};
+            getAddCartNew.push(newData);
+            coutCart.innerHTML = parseInt(coutCart.innerHTML)+1;
+        }
+       
+        
     }
    
     return (
@@ -135,7 +152,8 @@ import { convertToSlug } from "../../scriptAll/convertTextLowUp";
                                                 </div>
                                             </div>
                                             <div className="sectionProductRouter__count--btn">
-                                               <button className="sectionProductRouter__cout__btn">ADD TO CART</button>
+                                            <button className="sectionProductRouter__cout__btn" onClick={()=>{pushAddCart(invoiceItem)}}>ADD TO CART</button>
+                                               
                                             </div>
                                         </div>
 

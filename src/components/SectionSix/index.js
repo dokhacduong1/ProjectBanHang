@@ -2,24 +2,17 @@ import "./SectionSix.css"
 function SectionSix(){
     return(
         <>
-            <section className="SectionSix">
+            <footer className="SectionSix">
                 <div className="container">
-                <div className="SectionSix__boxIcon">
-                    <div className="SectionSix__boxIcon--list">
-                        <ul className="social SectionSix__boxUl">
-                            <li><a href=" "><i className="fa-brands fa-facebook"></i></a></li>
-                            <li><a href=" "><i className="fa-brands fa-twitter"></i></a></li>
-                            <li><a href=" "><i className="fa-brands fa-dribbble"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+               
                 <div className="row">
                     <div className="col-lg-12 text-center ">
-                        <p className="SectionSix__endContent">Thank You For Visiting Our Website.<br/>We Hope You Have A Great Shopping Time</p>
+                        <p className="SectionSix__endContent">COPYRIGHT 2025 DUONGSHOP DESIGN: KUSHINHP</p>
+                        <hr></hr>
                     </div>
                 </div>
                 </div>
-            </section>
+            </footer>
         </>
     )
 }

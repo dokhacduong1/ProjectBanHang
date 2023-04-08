@@ -7,6 +7,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import ShowProductRouter from "./components/showProductRouter"
 import Home from "./Home";
 import { RequestApiProdcut } from "./scriptAll/requestAPI";
+import YourCart from "./components/yourCart/yourCartYou";
 function Error(){
   return(
     <>
@@ -27,6 +28,7 @@ root.render(
       <Route path="/" element={<App />}>
             <Route path="" element={<Home/>}/>
              <Route path="listProduct/:invoiceId" element={<ShowProductRouter loadProductData={loadProduct} />} />
+             <Route path="yourcart" element={<YourCart/>} />
             <Route path="*" element ={<Error/>}/>
       </Route>
     </Routes>
