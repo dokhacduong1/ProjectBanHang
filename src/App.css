@@ -1,68 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 * {
-    box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
 }
 
-.HeaderNewOne {
-    position: fixed;
-    width: 100%;
-    z-index: 120;
-    transform: translateY(-56%);
-    transition: transform 0.6s ease 0s;
-    background-color: white;
+body .HeaderNewUp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 120;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  transition: all 0.3s ease 0s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+body .HeaderNewDown {
+  position: fixed;
+  width: 100%;
+  z-index: 120;
+  transform: translateY(-124%);
+  transition: color 0.6s ease;
+  background-color: white;
+}
+.HeaderNewTop {
+  line-height: unset;
+  height: fit-content;
+  background-color: white;
 }
 @media (max-width: 992.9px) {
-    .HeaderNewOne{
-        transform: translateY(-60%);
-    }
+  .HeaderNewUp {
+    transform: translateY(-60%);
+  }
 }
-@media (max-width: 767.9px){
-    .HeaderNewOne{
-        transform: translateY(-62%);
-    }
+@media (max-width: 767.9px) {
+  .HeaderNewUp {
+    transform: translateY(-62%);
+  }
 }
-body .wrapAroundBanner .wrapAroundBanner__blockNewOne{
+body .wrapAroundBanner .wrapAroundBanner__blockNewOne {
   border-bottom: none;
 }
 
 body .btnAll {
-    color: #3C3C43 !important;
-    display: inline-block;
-    position: relative;
-    max-width: 180px;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    color: rgb(60, 60, 67);
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-    line-height: 1.5;
-    text-transform: none;
-    cursor: pointer;
-    appearance: none;
-    touch-action: manipulation;
-    margin: -0.25em 0px;
-    padding: 14px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(60, 60, 67);
-    border-image: initial;
-    border-radius: 4px;
-    outline: 0px;
-    font-size: 20px;
-    transition: opacity 0.3s ease 0s, color 0.3s ease 0s, background-color 0.3s ease 0s;
+  color: #3c3c43 !important;
+  display: inline-block;
+  position: relative;
+  max-width: 180px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(60, 60, 67);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+  text-transform: none;
+  cursor: pointer;
+  appearance: none;
+  touch-action: manipulation;
+  margin: -0.25em 0px;
+  padding: 14px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(60, 60, 67);
+  border-image: initial;
+  border-radius: 4px;
+  outline: 0px;
+  font-size: 20px;
+  transition: opacity 0.3s ease 0s, color 0.3s ease 0s,
+    background-color 0.3s ease 0s;
 }
-body .btnAll:hover{
-    background-color: #F5F5F5;
-    text-decoration: none;
+body .btnAll:hover {
+  background-color: #f5f5f5;
+  text-decoration: none;
 }
 
 @media (max-width: 368.9px) {
-    body .btnAll {
-        max-width: 110px;
-        width: 63%;
-    
-    }
+  body .btnAll {
+    max-width: 110px;
+    width: 63%;
+  }
 }

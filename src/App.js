@@ -9,8 +9,8 @@ function App() {
   
   return (
     <>
-      <div className="HeaderNew">
-        <Banner />
+      <div className="HeaderNewTop">
+        <Banner/>
         <Header />
       </div>
       <Outlet/>

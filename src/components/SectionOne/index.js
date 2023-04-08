@@ -4,27 +4,68 @@ import './SectionOne.css'
 
 function SectionOne(){
 
-    const scrollHeader = ()=>{
-        const currentScrollPos = window.pageYOffset;
-        if(currentScrollPos !== 0){    
-            if(document.querySelector(".HeaderNew") !== null){
+    // const scrollHeader = ()=>{
+    //     const currentScrollPos = window.pageYOffset;
+    //     if(currentScrollPos !== 0){    
+    //         if(document.querySelector(".HeaderNew") !== null){
               
-                document.querySelector(".HeaderNew").classList.add("HeaderNewOne");
-                document.querySelector(".wrapAroundBanner__block").classList.add("wrapAroundBanner__blockNewOne");
+    //             document.querySelector(".HeaderNew").classList.add("HeaderNewOne");
+    //             document.querySelector(".wrapAroundBanner__block").classList.add("wrapAroundBanner__blockNewOne");
                
-            }
-       }
-       else if(currentScrollPos === 0){
-            if(document.querySelector(".HeaderNewOne") !== null){
-                document.querySelector(".HeaderNew").classList.remove("HeaderNewOne");
-                document.querySelector(".wrapAroundBanner__block").classList.remove("wrapAroundBanner__blockNewOne");
+    //         }
+    //    }
+    //    else if(currentScrollPos === 0){
+    //         if(document.querySelector(".HeaderNewOne") !== null){
+    //             document.querySelector(".HeaderNew").classList.remove("HeaderNewOne");
+    //             document.querySelector(".wrapAroundBanner__block").classList.remove("wrapAroundBanner__blockNewOne");
                
-            }
-       }
+    //         }
+    //    }
                 
         
       
-     }
+    //  }
+    //  window.onscroll = () => {
+    //     scrollHeader();
+    //   };
+    var isScrollingUp = false;
+    var lastScrollPos = 0;
+    var checkScroll = document.querySelector(".HeaderNewTop");
+   const scrollHeader = function() {
+        console.log("ok")
+      var currentScrollPos = window.pageYOffset;
+      var checkScrollUp = document.querySelector(".HeaderNewUp");
+      var checkScrollDown = document.querySelector(".HeaderNewDown");
+      if (currentScrollPos > lastScrollPos) {
+        if(checkScrollUp === null && checkScroll !== null){
+            checkScroll.classList.add("HeaderNewDown");
+        }else if(checkScrollUp !== null && checkScroll !== null){
+            checkScroll.classList.remove("HeaderNewUp");
+            checkScroll.classList.add("HeaderNewDown");
+        }
+        isScrollingUp = false;
+      } else if (currentScrollPos < lastScrollPos) {
+        if(checkScrollDown === null && checkScroll !== null){
+            checkScroll.classList.add("HeaderNewUp");
+        }else if(checkScrollDown !== null && checkScroll !== null){
+            checkScroll.classList.remove("HeaderNewDown");
+            checkScroll.classList.add("HeaderNewUp");
+        }
+        isScrollingUp = true;
+      }
+      
+      if (isScrollingUp && currentScrollPos === 0) {
+        if(checkScrollDown !== null && checkScroll !== null){
+            checkScroll.classList.remove("HeaderNewDown");
+        }
+        if(checkScrollUp !== null && checkScroll !== null){
+            checkScroll.classList.remove("HeaderNewUp");
+        }
+      } 
+      
+      lastScrollPos = currentScrollPos;
+    };
+
      window.onscroll = () => {
         scrollHeader();
       };
