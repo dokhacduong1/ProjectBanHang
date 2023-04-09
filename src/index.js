@@ -8,6 +8,7 @@ import ShowProductRouter from "./components/showProductRouter"
 import Home from "./Home";
 import { RequestApiProdcut } from "./scriptAll/requestAPI";
 import YourCart from "./components/yourCart/yourCartYou";
+import ProductAll from "./components/ProductAll";
 function Error(){
   return(
     <>
@@ -27,8 +28,13 @@ root.render(
     <Routes>
       <Route path="/" element={<App />}>
             <Route path="" element={<Home/>}/>
-             <Route path="listProduct/:invoiceId" element={<ShowProductRouter loadProductData={loadProduct} />} />
+             {/* Lấy data bên hàm loadProduct cho giao diện chính nhận được khi thao tác sẽ chuyển qua tab listProduct tương ứng với cái id đằng sau
+             Tiếp theo ta cùng đi vào Section Two */}
+             <Route path="listProduct/:invoiceId" element={<ShowProductRouter loadProductData={loadProduct} />} /> 
+            
              <Route path="yourcart" element={<YourCart/>} />
+             
+             <Route path="productAll/:invoiceId" element ={<ProductAll/>}/>
             <Route path="*" element ={<Error/>}/>
       </Route>
     </Routes>

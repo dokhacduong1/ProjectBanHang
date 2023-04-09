@@ -2,7 +2,10 @@ import { useState } from "react";
 import { getAddCartNew } from "../showProductRouter/getItemAddCard";
 import "./yourCart.css";
 import { Link } from "react-router-dom";
-
+//Hàm này ta nhận được cái getAddCartNew từ vừa lẫy nó sẽ chứa danh sách sản phầm người dùng muốn thêm vào giỏ hàng
+//Và ta vẽ ra sản phẩm như bình thường bằng html file này khó ở cái cũng có một giao diện hiện ra tăng hay giảm số lượng
+//sản phẩm như trước ta đã lưu cái cout ở hàm index thư mục showProductRouter đê làm việc này đó
+//còn muốn xem thao tác như nào thì xem hàm bên dưới nhé cái này khó giải thích giải thích cách chạy thôi
 function YourCart() {
   const loadMyCart = getAddCartNew;
 
@@ -69,7 +72,7 @@ function YourCart() {
       updateCoutValue(id, updatedCoutValue, "in");
     }
   };
-  console.log(coutValue);
+
   //Đến đây là hết
 
   return (

@@ -6,6 +6,7 @@ import './SectionTwo.css'
 import WOW from "wowjs"
 import React, { useState, useEffect } from "react";
 import { RequestApiProdcut } from "../../scriptAll/requestAPI";
+import { Link } from "react-router-dom";
 function SectionTwo(){
     const styles = {
         visibility : "visible",
@@ -33,10 +34,11 @@ function SectionTwo(){
                     <h3 ><strong>Special Products</strong> <span className="fa fa-star checked"></span></h3>
                 </div>
                 <ul className="sectionTwoProduct col-12">
+                    {/* Ở SectionTwo Ta sẽ đi vào hàm dưới này nhé */}
                     <RequestProduct data ={data}/>
                 </ul>
                 <div className="sectionTwo__Btn wow bounceInDown col-12" style={styles}>
-                    <a href=" " className="sectionTwo__Btn--btn btnAll">More</a>
+                    <Link to={'productAll/0'}  className="sectionTwo__Btn--btn btnAll">More</Link>
                 </div>
             </div>
            

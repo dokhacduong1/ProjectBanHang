@@ -149,6 +149,10 @@
     list-style-type: none;
     cursor: pointer;
 }
+.category ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+ }
 body .fa-caret-up{
     transform: rotate(180deg);
 }
@@ -242,6 +246,16 @@ body .fa-caret-up{
       
         top:-5px;
     }
+    .category {
+       
+        margin: 0;
+        padding: 6px 0;
+      
+    }
+    .category ul li{
+        margin: 0;
+        padding: 0;
+    }
 }
 @media (max-width: 365.9px) {
    
@@ -261,4 +275,11 @@ body .fa-caret-up{
         min-width: 32px;
     }
 }
+
+@media (max-width: 1199.9px){
+    .co-header .co-headerDropMenu__list__item .tabButton{
+        font-size: 12px;
+    }
+}
+
 

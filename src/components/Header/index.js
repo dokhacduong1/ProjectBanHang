@@ -10,7 +10,7 @@ import "./Header.css";
 import RequestAPI from "./requestCategory";
 import React, { useState, useCallback, useEffect } from "react";
 import { RequestApiCategory } from "../../scriptAll/requestAPI";
-
+import { getListItemCategory} from "../showProductRouter/getItemAddCard"
 
 function Header() {
  
@@ -19,14 +19,15 @@ function Header() {
   const getIcon = document.querySelector(".fa-caret-down");
 
   const clickCategory = () => {
+   
     setIsCategory(!isCategory);
     isCategory === true
       ? getIcon.classList.remove("fa-caret-up")
       : getIcon.classList.add("fa-caret-up");
   };
-
   const clickCategory2 = useCallback(async () => {
-        const  getData = await RequestApiCategory()
+        const  getData = await RequestApiCategory();
+       
         setData(getData);
   }, []);
 
@@ -82,11 +83,13 @@ function Header() {
                   </div>
                 </div>
               </div>
+              {/* Hedẻ ta chú ý đoạn này ta gọi đến cái Link giỏ hàng và đi đến giỏ hàng nhé tiếp chú ý file trong thư mục này là 
+              requestCategory ta vào đó nhé */}
               <Link to ={'yourcart'} style={{textDecoration:"none"}} className="co-header__tool">
                 <div className="lIcon">
                   <div className="co-header__toolBtn">
                     <span className="co-header__Count">
-                      <p style={{color:"#171212"}}>0</p>
+                      <p style={{color:" rgb(92 84 84)"}}>0</p>
                     </span>
                     <span className="co-header__toolTmb">
                       <img src={icon3} alt=""></img>
@@ -112,7 +115,7 @@ function Header() {
             </div>
           </div>
         </div>
-        {isCategory && <RequestAPI data={data} />}
+        {isCategory && <RequestAPI data={data} clickCategory ={clickCategory} />}
       </nav>
     </>
   );

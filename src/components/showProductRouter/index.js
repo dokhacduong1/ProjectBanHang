@@ -5,9 +5,11 @@ import Slider from "react-slick";
 
 import { convertToSlug } from "../../scriptAll/convertTextLowUp";
 import { getAddCartNew} from "./getItemAddCard";
+//Hàm này sẽ có công việc lấy cái props ta vừa truyền vào kia và vẽ ra giao diện theo đúng mục từng sản phẩm
+//Kiểu như người dùng ấn vào một sản phẩm nó phải hiện một tab để hiện thông tin chi tiết sản phẩm ấy
+//Tiếp nhé ta sẽ xuống đoạn onClick của cái Thẻ có chữ Add To Card
  function ShowProductRouter(props) {
     const [cout,setCout] = useState(1);
-
 
     const { invoiceId } = useParams(); // Lấy ra invoiceId từ URL
     const { loadProductData } = props;
@@ -72,11 +74,19 @@ import { getAddCartNew} from "./getItemAddCard";
                 break;
         }
     }
-
+    //Đến đây rồi ta thấy nó lấy ra cái thẻ có class là ".co-header__Cout p" để khi check dc điều kiện
+    //sản phẩm không nằm trong giỏ hàng thì sẽ add cái sản phẩm đó vào tiếp đến biến newData
+    //Ta sẽ lưu một object mới có dữ liệu của data truyền vào ta sẽ thêm cái cout mà người dụng
+    //chọn số lượng sản phẩm ấy kiểu khi người dùng click cái button + hay - nó sẽ có số lượng sản phẩm đó
+    //Tiếp ta thay cái price cho nó bằng price*cout ta sẽ ra dc số tiền và thêm một biến priceOrriginal
+    // = chính cái price  cũ để tý thao tác trên price mình vẫn hiện giá gốc lên web được không bị thay đổi
+    //Tiếp ta dùng cái biến getAdddCarrtNew ta push dữ liệu newData vào cho nó để bên giỏ hàng dùng được
+    //Nếu muốn biết getAdddCarrtNew ở đâu ta tìm chính thư mục này tìm file getItemAddCard.js là thấy
+    //Tiếp tục ta lấy cái coutCart ta cộng cái phần tử bên trong lên 1 rồi ok đến đây ta vào thư mục
+    //yourCart nhé chứa dữ liệu của giỏ hàng
     const pushAddCart =(getData)=>{
         let coutCart = document.querySelector(".co-header__Count p");
         if(getAddCartNew.findIndex(obj => obj.id === getData.id) === -1){
-            console.log("ok")
             const newData = { ...getData, cout: cout , price: getData.price*cout ,priceOriginal : getData.price};
             getAddCartNew.push(newData);
             coutCart.innerHTML = parseInt(coutCart.innerHTML)+1;
@@ -106,7 +116,7 @@ import { getAddCartNew} from "./getItemAddCard";
                                     <div className="sectionProductRouter__imageList">
                                         {
                                             invoiceItem.images.map((image,index)=>(
-                                                <div className="sectionProductRouter__imageList--item" key ={index}>
+                                                <div key={index} className="sectionProductRouter__imageList--item" key ={index}>
                                                      <img  src={image} alt ={invoiceItem.title}></img>
                                                 </div>
                                                
@@ -152,6 +162,7 @@ import { getAddCartNew} from "./getItemAddCard";
                                                 </div>
                                             </div>
                                             <div className="sectionProductRouter__count--btn">
+                                                {/* Đến đây nó có nhiệm vụ khi click vào thẻ button này sẽ nhảy vào hàm pushAddCart tiếp đi đến hàm PushAddCarrt nhé */}
                                             <button className="sectionProductRouter__cout__btn" onClick={()=>{pushAddCart(invoiceItem)}}>ADD TO CART</button>
                                                
                                             </div>

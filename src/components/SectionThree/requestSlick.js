@@ -38,6 +38,8 @@ function RequestSlick(props){
                 {
                     newArray.slice(0,6).map((getdata,index)=>(
                         <li key={index} >
+                           {/* Đoạn Section Three cũng chuyền data cho listProduct truyền cái id vào để khi click sản phẩm nó sẽ nhảy vào
+                        showwProductRouter và render ra như Section Two */}
                           <Link  to={`listProduct/${getdata.id}`} key={index} className="sectionThree__bodyOK-index">
                               <span className="sectionThree__bodyOK-img">
                                   <img alt="" src ={getdata.thumbnail}></img>

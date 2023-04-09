@@ -1,2 +1,2 @@
 export var getAddCartNew = new Array();
-export var getCoutCartNew = new Array();
+export var getListItemCategory = new Array();
