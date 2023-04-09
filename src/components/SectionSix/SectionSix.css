@@ -16,10 +16,12 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    justify-content: center;
 }
 .sectionSix__LogoIcon--icon li{
     font-size: 30px;
     padding-right: 20px;
+    
 }
 .sectionSix__LogoIcon--logo h1{
     font-size: 49px;
@@ -39,7 +41,7 @@
     text-align: left;
 }
 .sectionSix__Contact p{
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 .sectionBoxEnd{
     display: flex;

@@ -12,7 +12,7 @@ import ProductAll from "./components/ProductAll";
 function Error(){
   return(
     <>
-      <h1 style={{textAlign:"center",fontWeight:"900"}}>NOT FOUND</h1>
+      <h1 style={{textAlign:"center",fontWeight:"900"}}>Mục Bạn Vào Chủ Sở Hữu Đang Hoàn Thiện</h1>
     </>
   )
 }
