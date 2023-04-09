@@ -131,6 +131,9 @@
     .sectionBox{
         align-items:normal;
     }
+    .sectionSix__Contact p{
+        margin-bottom: 10px;
+    }
 }
 @media (max-width: 467.9px) {
    .sectionBox{
