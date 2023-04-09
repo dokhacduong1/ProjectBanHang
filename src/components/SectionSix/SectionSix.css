@@ -1,26 +1,186 @@
-.SectionSix{
+.sectionSix{
     margin-top: 10px;
     background-color: rgb(224, 226, 226);
-    padding: 10px 10px;
+    padding: 24px 71px;
+}
+.sectionBox{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+}
+.sectionBox ul{
+    list-style: none;
+}
+.sectionSix__LogoIcon--icon{
+    margin-top: 97px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.sectionSix__LogoIcon--icon li{
+    font-size: 30px;
+    padding-right: 20px;
+}
+.sectionSix__LogoIcon--logo h1{
+    font-size: 49px;
+    font-weight: 700;
+    color: #1c1c1c;
+    transition: all 0.3s ease 0s;
+    color: #1b1b1b;
+    text-align: center;
+}
+.sectionSix__Descrip a{
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    text-decoration: none;
+}
+.sectionSix__Descrip{
+    text-align: left;
+}
+.sectionSix__Contact p{
+    margin-bottom: 10px;
+}
+.sectionBoxEnd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sectionBoxEnd__info a{
+    padding-right: 15px;
+    font-size: 11px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.sectionBoxEnd__Copy p{
+    font-size: 11px;
+}
+.sectionSix__LogoIcon--logo h6{
+    font-size: 14px;
+}
+@media (max-width: 992.9px) {
+   .sectionSix__Contact h5{
+    font-size: 16px;
+   }
+   .sectionSix__Contact p {
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+.sectionSix__Descrip h5{
+    font-size: 16px;
+}
+.sectionSix__Descrip p{
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+.sectionSix__LogoIcon--logo h1 {
+    font-size: 38px;
+}
+.sectionSix__LogoIcon--logo h6 {
+    font-size: 9px;
+}
+.sectionSix__LogoIcon--icon li {
+    font-size: 22px;
+
+}
+.sectionBoxEnd__info a {
+    font-size: 9px;
+   
+}
+.sectionBoxEnd__Copy p {
+    font-size: 9px;
+}
 }
 
-.SectionSix__endContent{
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 11px;
-    color: #535352;
-}
-@media (max-width: 600px) {
-    .SectionSix__endContent {
-        font-size: 11px;
+@media (max-width: 767.9px) {
+    .sectionSix__Contact h5 {
+        font-size: 12px;
+    }
+    .sectionSix__Contact p {
+        
+        font-size: 9px;
+    }
+    .sectionSix__Descrip h5 {
+        font-size: 12px;
+    }
+    .sectionSix__Descrip a {
+        font-size: 9px;
+    }
+    .sectionSix__LogoIcon--logo h1 {
+        font-size: 27px;
+    }
+    .sectionSix__LogoIcon--logo h6 {
+        font-size: 7px;
+    }
+    .sectionBoxEnd__info a {
+        font-size: 7px;
+    }
+    .sectionBoxEnd__info a {
+        font-size: 7px;
+    }
+    .sectionSix__LogoIcon--icon li {
+        font-size: 15px;
     }
 }
-@media (max-width: 368.9px) {
-    .SectionSix__boxUl li { 
-        font-size: 24px;
+
+@media (max-width: 521.9px) {
+    .sectionSix{
+        padding: 24px 8px;
     }
+    .sectionBox{
+        align-items:normal;
+    }
+}
+@media (max-width: 467.9px) {
+   .sectionBox{
+        flex-wrap: wrap;
+   }
+   .sectionSix__LogoIcon--logo{
+    text-align: center;
+   }
+   .sectionSix__LogoIcon--icon {
+     margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+}
+.sectionSix__logoIcon{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.sectionSix__Descrip {
+    text-align: center;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.sectionSix__Contact {
+    text-align: center;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.sectionBoxEnd__Copy p{
+    font-size: 7px;
+}
+.sectionBoxEnd{
+    display: block;
+}
+.sectionBoxEnd__Copy p{
+    margin-top: 8px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.sectionBoxEnd__info{
+    text-align: center;
+}
    
-    .SectionSix__endContent {
-        font-size: 11px;
-    }
 }
+@media (max-width: 320.9px){
+  
+}
+
+@media (max-width: 1199.9px){
+  
+}
+
