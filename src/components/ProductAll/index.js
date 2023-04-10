@@ -4,10 +4,7 @@ import { RequestApiProdcut, RequestApiCategory } from "../../scriptAll/requestAP
 import "./ProductAll.css";
 import { useParams } from "react-router-dom";
 import _ from 'lodash';
-import { getListItemCategory } from "..//showProductRouter/getItemAddCard"
-import { wait } from "@testing-library/user-event/dist/utils";
 import LoadListItem from "./loadListItem";
-import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 import icon2 from "./asset/img/2.gif";
 const initialState = {

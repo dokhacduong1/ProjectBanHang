@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import icon1 from "./asset/img/1.svg";
-import { getAddCartNew } from "../showProductRouter/getItemAddCard";
+import { getAddCartNew } from "../../scriptAll/getItemAddCard";
 //hàm này vẽ ra các sản phẩm mà lúc đoạn category gọi vào đó nó sẽ lấy id /categoy/id lấy cái id đằng sau lưu zo cái 
 //invoiceId và từ đó ta tìm dc các prodcut có chứa sản phẩm id đó thông qua hàm filter tiếp túc xuống dưới đi
 function LoadListItem(props) {

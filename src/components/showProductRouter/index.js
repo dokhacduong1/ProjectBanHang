@@ -4,7 +4,7 @@ import "./showProductRouter.css"
 import Slider from "react-slick";
 
 import { convertToSlug } from "../../scriptAll/convertTextLowUp";
-import { getAddCartNew} from "./getItemAddCard";
+import { getAddCartNew } from "../../scriptAll/getItemAddCard";
 //Hàm này sẽ có công việc lấy cái props ta vừa truyền vào kia và vẽ ra giao diện theo đúng mục từng sản phẩm
 //Kiểu như người dùng ấn vào một sản phẩm nó phải hiện một tab để hiện thông tin chi tiết sản phẩm ấy
 //Tiếp nhé ta sẽ xuống đoạn onClick của cái Thẻ có chữ Add To Card

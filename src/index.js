@@ -9,10 +9,12 @@ import Home from "./Home";
 import { RequestApiProdcut } from "./scriptAll/requestAPI";
 import YourCart from "./components/yourCart/yourCartYou";
 import ProductAll from "./components/ProductAll";
+import BuyProduct from "./components/buyProduct";
+import CompleteBuyProduct from "./components/completeBuyProduct";
 function Error(){
   return(
     <>
-      <h1 style={{textAlign:"center",fontWeight:"900"}}>Mục Bạn Vào Chủ Sở Hữu Đang Hoàn Thiện</h1>
+      <h1 style={{textAlign:"center",fontWeight:"900",fontSize:"300px"}}>NOT FOUND</h1>
     </>
   )
 }
@@ -30,10 +32,12 @@ root.render(
             <Route path="" element={<Home/>}/>
              {/* Lấy data bên hàm loadProduct cho giao diện chính nhận được khi thao tác sẽ chuyển qua tab listProduct tương ứng với cái id đằng sau
              Tiếp theo ta cùng đi vào Section Two */}
-             <Route path="listProduct/:invoiceId" element={<ShowProductRouter loadProductData={loadProduct} />} /> 
-            
-             <Route path="yourcart" element={<YourCart/>} />
-             
+             <Route path="listProduct/:invoiceId" element={<ShowProductRouter loadProductData={loadProduct} />} />       
+             <Route path="yourcart" element={<YourCart/>} />            
+             <Route path="buyproduct" element={<BuyProduct/>}/>
+                
+
+             <Route path="buyproduct/complete/:invoiceId" element={<CompleteBuyProduct/>}/>
              <Route path="productAll/:invoiceId" element ={<ProductAll/>}/>
             <Route path="*" element ={<Error/>}/>
       </Route>

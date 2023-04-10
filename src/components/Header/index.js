@@ -10,7 +10,7 @@ import "./Header.css";
 import RequestAPI from "./requestCategory";
 import React, { useState, useCallback, useEffect } from "react";
 import { RequestApiCategory } from "../../scriptAll/requestAPI";
-import { getListItemCategory} from "../showProductRouter/getItemAddCard"
+
 
 function Header() {
  

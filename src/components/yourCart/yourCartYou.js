@@ -1,5 +1,8 @@
 import { useState } from "react";
-import { getAddCartNew } from "../showProductRouter/getItemAddCard";
+import {
+  getAddCartNew,
+  getListProductBuy,
+} from "../../scriptAll/getItemAddCard";
 import "./yourCart.css";
 import { Link } from "react-router-dom";
 //Hàm này ta nhận được cái getAddCartNew từ vừa lẫy nó sẽ chứa danh sách sản phầm người dùng muốn thêm vào giỏ hàng
@@ -8,8 +11,10 @@ import { Link } from "react-router-dom";
 //còn muốn xem thao tác như nào thì xem hàm bên dưới nhé cái này khó giải thích giải thích cách chạy thôi
 function YourCart() {
   const loadMyCart = getAddCartNew;
-
+  console.log(1,loadMyCart)
   const [coutValue, setCoutValue] = useState(loadMyCart);
+ 
+  var stateBuy = loadMyCart.length>0 ? true : false;
   const checkPriceAll = () => {
     let sumAll = 0;
     // eslint-disable-next-line array-callback-return
@@ -72,9 +77,18 @@ function YourCart() {
       updateCoutValue(id, updatedCoutValue, "in");
     }
   };
-
+ 
   //Đến đây là hết
+  const handleBuy = () => {
+    coutValue.map(data =>{
+      if(!getListProductBuy.includes(data)){
+        getListProductBuy.push(data);
+      }
+    })
+  };
 
+ 
+  
   return (
     <>
       <section className="myCart">
@@ -195,9 +209,11 @@ function YourCart() {
                   <p>We Hope You Are Always Happy</p>
                 </div>
                 <div className="myCart__buyBox--btn">
-                  <button className="myCart__btn">
-                    <strong>BUY</strong>
-                  </button>
+                  <Link to={!stateBuy ? " " : "/buyproduct"} onClick={handleBuy}>
+                    <button className="myCart__btn" >
+                      <strong>BUY</strong>
+                    </button>
+                  </Link>
                   <p>Will You Continue To Shop For Our Products?</p>
                   <Link to={"/"} className="continuMyCart">
                     Click Here To Continue
@@ -212,14 +228,9 @@ function YourCart() {
         <div className="container">
           <div className="myMailBox__box">
             <h5 className="myMailBox__box--text1">Chào Anh Chị</h5>
-            <p className="myMailBox__box--text2">
-              Tôi muốn gửi lời chúc sức khỏe và lời cảm ơn chân thành đến
-              anh/chị. Việc mua sắm của anh/chị không chỉ đóng góp vào sự phát
-              triển của cửa hàng chúng tôi mà còn giúp chúng tôi có thêm động
-              lực để cải tiến sản phẩm và dịch vụ của mình.
-            </p>
+            
             <p className="myMailBox__box--text3">
-              Chào anh/chị, Tôi muốn gửi lời chúc sức khỏe và lời cảm ơn chân
+              Tôi muốn gửi lời chúc sức khỏe và lời cảm ơn chân
               thành đến anh/chị. Việc mua sắm của anh/chị không chỉ đóng góp vào
               sự phát triển của cửa hàng chúng tôi mà còn giúp chúng tôi có thêm
               động lực để cải tiến sản phẩm và dịch vụ của mình. Trong thời gian

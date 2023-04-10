@@ -3,7 +3,7 @@
 import { memo} from "react";
 import { convertToSlug } from "../../scriptAll/convertTextLowUp";
 import { Link } from "react-router-dom";
-import { getListItemCategory} from "../showProductRouter/getItemAddCard"
+
 function RequestAPI(props){
     const  {data ,clickCategory}=props;
     const handeleClick=()=>{

@@ -1,0 +1,131 @@
+.buyProdcut {
+  margin-top: 40px;
+}
+.formSubit label {
+  padding: 0;
+}
+.formSubit {
+    border: 1px solid rgb(216, 216, 217);
+    background-color: rgb(255, 255, 255);
+  padding: 40px 35px;
+}
+.formSubit input {
+  padding: 20px 20px;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 5px;
+}
+.formSubit input:focus-visible {
+  outline: none;
+  border: 1px solid #000;
+}
+.formSubit h4{
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 25px;
+    font-weight: 600;
+}
+.formSubit label {
+  color: rgba(0, 0, 0, 0.75);
+  margin-top: 25px;
+  margin-bottom: calc(15px - 0.25em);
+}
+.boxCheck {
+  margin-bottom: 0;
+}
+
+
+.buyProduct__boxSubmit {
+  color: #000000a6;
+  line-height: 1.5;
+  list-style: none;
+  text-align: center;
+}
+
+.buyProduct__boxSubmit a {
+    margin-top: 20px;
+    max-width: 370px;
+    padding: 16px;
+    line-height: 1.5;
+    background-color: rgb(60, 60, 67);
+    transition: all 0.3s ease 0s;
+    border-width: 0px;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    text-decoration: none;
+}
+.buyProduct__boxSubmit a:hover {
+  
+  background-color: rgb(0, 0, 0);
+ 
+}
+.buyProduct__boxSubmit p{
+    margin: 0;
+    font-size: 13px;
+}
+
+input[type='checkbox'] {
+    accent-color: rgb(82, 82, 82);
+}
+
+
+@media (max-width: 992.9px) {
+    .boyProduct__Title h1{
+      font-size: 30px;
+    }
+
+}
+
+
+@media (max-width: 581.9px) {
+  .boyProduct__Title h1{
+    text-align: center;
+  }
+  .formSubit label {
+   
+    font-size: 14px;
+
+}
+.formSubit h4 {
+  text-align: center;
+  font-size: 23px;
+  margin: 0;
+}
+
+}
+@media (max-width: 384.9px) {
+  .boyProduct__Title h1 {
+    font-size: 25px;
+}
+.formSubit h4 {
+  font-size: 22px;
+
+}
+.formSubit label {
+  margin-top: 11px;
+
+}
+.boxCheck strong{
+  font-size: 11px
+};
+.buyProduct__boxSubmit p {
+  font-size: 11px;
+}
+.formSubit input {
+  padding: 12px 20px;
+ 
+}
+}
+@media (max-width: 400.9px){
+  
+}
+
+@media (max-width: 1199.9px){
+  
+}
+
+

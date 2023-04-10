@@ -41,7 +41,7 @@
     text-align: left;
 }
 .sectionSix__Contact p{
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 .sectionBoxEnd{
     display: flex;
@@ -61,6 +61,9 @@
 .sectionSix__LogoIcon--logo h6{
     font-size: 14px;
 }
+.sectionBoxEnd__Copy p{
+    margin: 0;
+}
 @media (max-width: 992.9px) {
    .sectionSix__Contact h5{
     font-size: 16px;
@@ -68,6 +71,11 @@
    .sectionSix__Contact p {
     margin-bottom: 3px;
     font-size: 14px;
+}
+.sectionSix__Descrip a {
+ 
+    margin-bottom: 3px;
+ 
 }
 .sectionSix__Descrip h5{
     font-size: 16px;
