@@ -45,6 +45,9 @@ body .HeaderNewDown {
   .HeaderNewUp {
     transform: translateY(-62%);
   }
+  body  .notFound h1 {
+    font-size: 184px;
+}
 }
 body .wrapAroundBanner .wrapAroundBanner__blockNewOne {
   border-bottom: none;
@@ -81,6 +84,18 @@ body .btnAll {
 body .btnAll:hover {
   background-color: #ebebeb;
   text-decoration: none;
+}
+
+@media (max-width: 595.9px) {
+  body .notFound h1 {
+    font-size: 122px;
+}
+}
+
+@media (max-width: 368.9px) {
+  body .notFound h1 {
+    font-size: 97px;
+}
 }
 
 @media (max-width: 368.9px) {

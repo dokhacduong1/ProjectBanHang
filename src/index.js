@@ -14,7 +14,9 @@ import CompleteBuyProduct from "./components/completeBuyProduct";
 function Error(){
   return(
     <>
-      <h1 style={{textAlign:"center",fontWeight:"900",fontSize:"300px"}}>NOT FOUND</h1>
+      <div className="notFound">
+                    <h1>NOT FOUND</h1>
+        </div>
     </>
   )
 }
