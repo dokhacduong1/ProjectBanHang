@@ -11,9 +11,7 @@
     display: flex;
     flex-wrap: wrap;
 }
-.completeBuyProduct__product {
-    border-left: 1px dashed #a8a8a8;
-}
+
 .completeBuyProduct__box p{
     margin-bottom: 8px;
 }
